@@ -14,7 +14,7 @@ const Footer = () => {
   return (
     <StyledFooter>
       <Typography variant="body2">
-        © 2024 Azam's pvt ltd
+        © 2024 Azam's User Management System
       </Typography>
     </StyledFooter>
   );

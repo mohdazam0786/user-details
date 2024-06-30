@@ -3,6 +3,8 @@ import { Container, Grid, Typography, Paper } from '@mui/material';
 import { styled } from '@mui/system';
 import UserList from './components/UserList';
 import UserDetails from './components/UserDetails';
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 const StyledPaper = styled(Paper)(({ theme }) => ({
   padding: theme.spacing(3),
@@ -13,6 +15,8 @@ const App = () => {
   const [selectedUser, setSelectedUser] = useState(null);
 
   return (
+    <>
+  <Header />
     <Container>
       <StyledPaper>
         <Typography variant="h4" gutterBottom>
@@ -28,6 +32,8 @@ const App = () => {
         </Grid>
       </StyledPaper>
     </Container>
+    <Footer />
+    </>
   );
 };
 
